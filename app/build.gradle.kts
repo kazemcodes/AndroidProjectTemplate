@@ -107,6 +107,7 @@ dependencies {
 
     implementation(libs.dataStore)
     implementation(libs.dataStoreCore)
+    implementation(libs.bundles.common)
 
 
 
