@@ -29,6 +29,9 @@ jobs:
           java-version: 11
           distribution: adopt
 
+      - name: Make Gradlew Executable
+        run: chmod +x ./gradlew
+
       - name: Build app and run unit tests
         uses: gradle/gradle-command-action@v2
         with:
