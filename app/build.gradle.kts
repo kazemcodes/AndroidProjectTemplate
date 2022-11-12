@@ -7,15 +7,15 @@ plugins {
 }
 
 android {
-    namespace = "ir.kazemcodes.androidprojecttemplate"
-    compileSdk = 33
+    namespace = ProjectConfig.applicationId
+    compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId = "ir.kazemcodes.androidprojecttemplate"
-        minSdk =21
-        targetSdk =33
-        versionCode =1
-        versionName ="1.0"
+        applicationId = ProjectConfig.applicationId
+        minSdk =ProjectConfig.minSdk
+        targetSdk =ProjectConfig.targetSdk
+        versionCode = ProjectConfig.versionCode
+        versionName =ProjectConfig.versionName
         testInstrumentationRunner ="androidx.test.runner.AndroidJUnitRunner"
     }
 
