@@ -5,7 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import ir.kazemcodes.androidprojecttemplate.ui.screens.ScreenContent
+import com.ramcosta.composedestinations.DestinationsNavHost
+import ir.kazemcodes.androidprojecttemplate.ui.screens.NavGraphs
 import ir.kazemcodes.androidprojecttemplate.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -16,11 +17,16 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     color = MaterialTheme.colorScheme.surface,
                     contentColor = MaterialTheme.colorScheme.onSurface,
-
-                    ) {
-                    ScreenContent()
+                ) {
+                    //ScreenContent()
+                    DestinationsNavHost(navGraph = NavGraphs.root)
                 }
             }
         }
     }
+}
+
+
+fun setupNavigation() {
+
 }

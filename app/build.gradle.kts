@@ -56,7 +56,7 @@ android {
     }
     sqldelight {
         database("Database") {
-            packageName = "ir.kazemcodes.androidprojecttemplate"
+            packageName = ProjectConfig.applicationId
             dialect = "sqlite:3.24"
             version = 1
             schemaOutputDirectory = file("src/main/sqldelight/databases")
@@ -108,6 +108,9 @@ dependencies {
     implementation(libs.dataStore)
     implementation(libs.dataStoreCore)
     implementation(libs.bundles.common)
+
+    implementation(libs.destinations.core)
+    ksp(libs.destinations.ksp)
 
 
 
